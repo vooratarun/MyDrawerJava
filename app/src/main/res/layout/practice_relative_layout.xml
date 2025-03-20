@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentTop="true"/>
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginTop="15dp"/>
+
+    <!-- User Status -->
+    <TextView
+        android:id="@+id/usser_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photographer Traveler"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:layout_below="@id/user_name"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Follow Button -->
+    <Button
+        android:id="@+id/btn_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFF"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/user_name"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Message Button -->
+    <Button
+        android:id="@+id/btn_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:backgroundTint="#03A9F4"
+        android:textColor="#FFF"
+        android:layout_below="@id/btn_follow"
+        android:layout_alignEnd="@id/btn_follow"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Post Image -->
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/btn_message"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- Like Button -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_image"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like"
+            android:backgroundTint="#E91E63"
+            android:textColor="#FFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <!-- Comment Button -->
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:backgroundTint="#009688"
+            android:textColor="#FFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

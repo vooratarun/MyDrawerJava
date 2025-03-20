@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:elevation="4dp"/>
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"/>
+
+    <Button
+        android:id="@+id/buttonInsertUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert User"/>
+
+    <Button
+        android:id="@+id/buttonGetUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Get All Users DB"  />
+
+    <TextView
+        android:id="@+id/textViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Users will appear here"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/fetchUsersBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="fetch All Users api"/>
+
+
+
+    <Button
+        android:id="@+id/deleteUsersBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Delete All Users"
+
+        />
+
+</LinearLayout>
