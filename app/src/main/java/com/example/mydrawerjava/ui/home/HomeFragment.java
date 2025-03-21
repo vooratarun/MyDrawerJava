@@ -16,9 +16,11 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.mydrawerjava.CoordinateLayoutActivity;
+import com.example.mydrawerjava.PermissionsActivity;
 import com.example.mydrawerjava.PracticeViewpagerActivity;
 import com.example.mydrawerjava.ProgressbarActivity;
 import com.example.mydrawerjava.R;
+import com.example.mydrawerjava.RatingActitivity;
 import com.example.mydrawerjava.RoomDatabaseActivity;
 import com.example.mydrawerjava.ScrollingActivity;
 import com.example.mydrawerjava.SharedPrefActivity;
@@ -125,7 +127,22 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        binding.permissions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PermissionsActivity.class);
+                startActivity(intent);
+            }
+        });
 
+
+        binding.rating.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RatingActitivity.class);
+                startActivity(intent);
+            }
+        });
 
         return root;
     }
@@ -164,6 +181,7 @@ public class HomeFragment extends Fragment {
         builder.setPositiveButton("OK", (dialog, which) -> {
             String userInput = input.getText().toString();
             Toast.makeText(getContext(), "Entered: " + userInput, Toast.LENGTH_SHORT).show();
+
         });
         builder.setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss());
 

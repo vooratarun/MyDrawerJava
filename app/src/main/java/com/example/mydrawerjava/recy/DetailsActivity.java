@@ -1,4 +1,4 @@
-package com.example.mydrawerjava;
+package com.example.mydrawerjava.recy;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -7,9 +7,8 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.mydrawerjava.R;
 
 public class DetailsActivity extends AppCompatActivity {
 

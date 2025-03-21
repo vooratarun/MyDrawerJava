@@ -2,7 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +21,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyDrawerJava"
         tools:targetApi="31">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RatingActitivity"
+            android:exported="false" />
+        <activity
+            android:name=".PermissionsActivity"
+            android:exported="false" />
         <activity
             android:name=".loginlogout.HomeActivity"
             android:exported="false" />
@@ -48,10 +64,10 @@
             android:name=".mvvmretrofit.MVVMRetrofitActivity"
             android:exported="false" />
         <activity
-            android:name=".RetrofitActivity"
+            android:name=".retro.RetrofitActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailsActivity"
+            android:name=".recy.DetailsActivity"
             android:exported="false" />
         <activity
             android:name=".SettingsActivity"
@@ -78,7 +94,7 @@
             android:label="@string/title_activity_scrolling"
             android:theme="@style/Theme.MyDrawerJava.NoActionBar" />
         <activity
-            android:name=".EmptyViewsActivity"
+            android:name=".recy.EmptyViewsActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity">
             <meta-data
