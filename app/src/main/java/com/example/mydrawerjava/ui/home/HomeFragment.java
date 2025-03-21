@@ -16,8 +16,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.mydrawerjava.CoordinateLayoutActivity;
-import com.example.mydrawerjava.MVVMRetrofitActivity;
-import com.example.mydrawerjava.MainActivity;
 import com.example.mydrawerjava.PracticeViewpagerActivity;
 import com.example.mydrawerjava.ProgressbarActivity;
 import com.example.mydrawerjava.R;
@@ -26,6 +24,8 @@ import com.example.mydrawerjava.ScrollingActivity;
 import com.example.mydrawerjava.SharedPrefActivity;
 import com.example.mydrawerjava.ViewModelActivity;
 import com.example.mydrawerjava.databinding.FragmentHomeBinding;
+import com.example.mydrawerjava.loginlogout.Login2Activity;
+import com.example.mydrawerjava.mvvmroom.MVVMRoomActivity;
 
 public class HomeFragment extends Fragment {
 
@@ -105,6 +105,23 @@ public class HomeFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), RoomDatabaseActivity.class);
                 startActivity(intent);
 
+            }
+        });
+
+        binding.mvvmroom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MVVMRoomActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        binding.loginlogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Login2Activity.class);
+                startActivity(intent);
             }
         });
 

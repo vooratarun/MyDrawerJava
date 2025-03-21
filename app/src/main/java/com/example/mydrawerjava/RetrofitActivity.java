@@ -5,9 +5,6 @@ import android.os.Bundle;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
@@ -16,12 +13,13 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.http.POST;
 
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.mydrawerjava.databinding.ActivityRetrofitBinding;
+import com.example.mydrawerjava.mvvmretrofit.ApiService;
+import com.example.mydrawerjava.mvvmretrofit.Post;
 
 
 public class RetrofitActivity extends AppCompatActivity {

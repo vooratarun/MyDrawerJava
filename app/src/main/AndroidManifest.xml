@@ -15,6 +15,18 @@
         android:theme="@style/Theme.MyDrawerJava"
         tools:targetApi="31">
         <activity
+            android:name=".loginlogout.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginlogout.Login2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".mvvmroom.NoteDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mvvmroom.MVVMRoomActivity"
+            android:exported="false" />
+        <activity
             android:name=".RoomDatabaseActivity"
             android:exported="false" />
         <activity
@@ -33,7 +45,7 @@
             android:name=".LayoutPractice"
             android:exported="false" />
         <activity
-            android:name=".MVVMRetrofitActivity"
+            android:name=".mvvmretrofit.MVVMRetrofitActivity"
             android:exported="false" />
         <activity
             android:name=".RetrofitActivity"

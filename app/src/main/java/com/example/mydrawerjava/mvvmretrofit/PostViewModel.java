@@ -1,7 +1,8 @@
-package com.example.mydrawerjava;
+package com.example.mydrawerjava.mvvmretrofit;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
+
 import java.util.List;
 
 public class PostViewModel extends ViewModel {

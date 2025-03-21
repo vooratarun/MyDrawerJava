@@ -3,6 +3,7 @@ package com.example.mydrawerjava;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.example.mydrawerjava.mvvmretrofit.Post;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

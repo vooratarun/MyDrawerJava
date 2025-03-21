@@ -1,4 +1,4 @@
-package com.example.mydrawerjava;
+package com.example.mydrawerjava.mvvmretrofit;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -7,13 +7,12 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.mydrawerjava.R;
 
 import java.util.ArrayList;
 import java.util.List;
