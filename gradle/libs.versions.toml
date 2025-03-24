@@ -21,6 +21,8 @@ converter-gson = "2.9.0"
 viewpager2 = "1.1.0"
 kotlin = "2.1.20"
 coreKtx = "1.15.0"
+ksp-version = "1.9.22-1.0.17"
+hilt-version = "2.44"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -44,9 +46,14 @@ viewpager2 = {module = "androidx.viewpager2:viewpager2", version.ref= "viewpager
 
 coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt-version" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt-version" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-version" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt-version" }
 
 
