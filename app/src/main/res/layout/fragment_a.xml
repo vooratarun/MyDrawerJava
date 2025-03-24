@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter message for B" />
+
+    <Button
+        android:id="@+id/buttonSendToB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send to Fragment B"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waiting for message..."
+        android:textSize="18sp"
+        android:paddingTop="10dp" />
+</LinearLayout>

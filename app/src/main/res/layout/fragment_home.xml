@@ -77,8 +77,8 @@
         android:id="@+id/progressbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="124dp"
         android:text="progressbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -88,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="16dp"
         android:text="sharedpref"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -142,6 +142,16 @@
         android:layout_marginBottom="60dp"
         android:text="rating"
         app:layout_constraintBottom_toTopOf="@+id/permissions"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fragmentcommunication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="60dp"
+        android:text="fragmentcommunication"
+        app:layout_constraintBottom_toTopOf="@+id/progressbar"
         app:layout_constraintStart_toStartOf="parent" />
 
 

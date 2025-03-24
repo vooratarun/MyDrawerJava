@@ -26,6 +26,7 @@ import com.example.mydrawerjava.ScrollingActivity;
 import com.example.mydrawerjava.SharedPrefActivity;
 import com.example.mydrawerjava.ViewModelActivity;
 import com.example.mydrawerjava.databinding.FragmentHomeBinding;
+import com.example.mydrawerjava.fragmentcommunication.PracticeFragmentActivity;
 import com.example.mydrawerjava.loginlogout.Login2Activity;
 import com.example.mydrawerjava.mvvmroom.MVVMRoomActivity;
 
@@ -140,6 +141,14 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), RatingActitivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.fragmentcommunication.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PracticeFragmentActivity.class);
                 startActivity(intent);
             }
         });
