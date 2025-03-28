@@ -1,8 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.ksp)
-    alias(libs.plugins.hilt)
+//    alias(libs.plugins.kotlin.android)
+//    alias(libs.plugins.ksp)
+//    alias(libs.plugins.hilt)
 }
 
 android {
@@ -35,9 +35,9 @@ android {
     buildFeatures {
         viewBinding = true
     }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
+//    kotlinOptions {
+//        jvmTarget = "11"
+//    }
 }
 
 dependencies {
@@ -93,8 +93,8 @@ dependencies {
     // optional - Paging 3 Integration
     implementation("androidx.room:room-paging:$room_version")
 
-    implementation(libs.hilt.android)
-    ksp(libs.hilt.compiler)
+//    implementation(libs.hilt.android)
+//    ksp(libs.hilt.compiler)
 
     implementation("androidx.paging:paging-runtime:3.2.1")
 
